@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ChatApp.MainPage">
+
+    <StackLayout Padding="10">
+        <!-- Ввод имени пользователя -->
+        <Entry x:Name="UsernameEntry" Placeholder="Введите ваше имя" />
+
+        <!-- Ввод IP-адреса другого устройства -->
+        <Entry x:Name="TargetIpAddressEntry" Placeholder="IP адрес собеседника" />
+
+        <!-- Кнопка для начала чата -->
+        <Button Text="Начать чат" Clicked="OnStartChatClicked" />
+    </StackLayout>
+</ContentPage>
